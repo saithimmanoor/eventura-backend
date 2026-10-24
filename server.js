@@ -42,3 +42,4 @@ app.get('/', (req, res) => res.json({ status: 'ok', service: 'Eventura API proxy
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Eventura proxy running on port ${PORT}`));
+
