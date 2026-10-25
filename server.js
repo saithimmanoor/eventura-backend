@@ -32,4 +32,6 @@ app.post('/api/messages', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => res.json({ status: 'ok', service: 'Eventura API proxy' }));
+
 app.listen(process.env.PORT || 3000, () => console.log('Running'));
